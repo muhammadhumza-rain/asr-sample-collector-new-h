@@ -1,0 +1,52 @@
+{
+  "name": "sample-collector",
+  "description": "Audio recorder tapir component for Vue.js 3. It enables to record, play and send audio messages to a server.",
+  "version": "1.5.0",
+  "author": {
+    "name": "RAIN"
+  },
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "lint": "vue-cli-service lint",
+    "build": "NODE_ENV=production && vue-cli-service build --mode production --target lib --name sample-collector src/components/TapirWidget.vue"
+  },
+  "keywords": [],
+  "dependencies": {
+    "core-js": "3.19.1",
+    "quasar": "^2.17.0"
+  },
+  "peerDependencies": {
+    "vue": "3.2.39"
+  },
+  "devDependencies": {
+    "@babel/core": "7.18.9",
+    "@babel/eslint-parser": "7.18.9",
+    "@vue/cli-plugin-babel": "5.0.8",
+    "@vue/cli-plugin-eslint": "5.0.8",
+    "@vue/cli-service": "5.0.8",
+    "eslint": "7.32.0",
+    "eslint-plugin-vue": "8.7.1",
+    "pinia": "2.0.3",
+    "postcss": "8.4.16",
+    "tailwindcss": "3.1.8"
+  },
+  "main": "dist/sample-collector.common.js",
+  "browser": "dist/sample-collector.umd.min.js",
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/vue3-essential"
+    ],
+    "rules": {
+      "quotes": "off"
+    }
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ]
+}
